@@ -33,6 +33,15 @@ public class SteamInput : MonoBehaviour
     public SteamVR_Action_Boolean m_PullAction = null;
     //public SteamVR_Action_Vibration haptic = SteamVR_Actions.default_Haptic;
     #endregion
+
+    #region 그외
+    public handanimations rightHandAnim;
+    public handanimations leftHandAnim;
+
+    public LaserPointer rightLaserPointer;
+    public LaserPointer leftLaserPointer;
+    #endregion
+
     private void Update()
     {
         Inputs();
@@ -40,21 +49,49 @@ public class SteamInput : MonoBehaviour
 
     private void Inputs()
     {
-        if(m_UpButton.GetStateDown(m_RightHandPose.inputSource))
-        {
-            Debug.Log("m_UpButton.GetStateDown(m_RightHandPose.inputSource)");
-        }
-        else if(m_UpButton.GetStateDown(m_LeftHandPose.inputSource))
-        {
-            Debug.Log("m_UpButton.GetStateDown(m_LeftHandPose.inputSource)");
-        }
+        #region 오른손 trigger
+        //오른손
         if (m_PullAction.GetStateDown(m_RightHandPose.inputSource))
         {
-            Debug.Log("m_PullAction.GetStateDown(m_RightHandPose.inputSource)");
+            Debug.Log("right trigger button down");
+
+            //1. 포즈변경 -> gun pose로
+            rightHandAnim.SetPose("Point");
+
+            //2. 그리기 모드 on
+            rightLaserPointer.CreateLineRenderer();
         }
-        if (m_PullAction.GetStateDown(m_LeftHandPose.inputSource))
+        else if(m_PullAction.GetStateUp(m_RightHandPose.inputSource))
         {
-            Debug.Log("m_PullAction.GetStateDown(m_LeftHandPose.inputSource)");
+            Debug.Log("right trigger button up");
+
+            //1. 포즈변경 -> idle pose로
+            rightHandAnim.SetPose("Idle");
+
+            //2. 그리기 모드 off
+            rightLaserPointer.DestoryLineRenderer();
         }
+        #endregion
+
+        #region 왼손 trigger
+        //왼손
+        if (m_UpButton.GetStateDown(m_LeftHandPose.inputSource))
+        {
+            Debug.Log("left trigger button down");
+        }
+        else if(m_UpButton.GetStateUp(m_LeftHandPose.inputSource))
+        {
+            Debug.Log("left trigger button up");
+        }
+        #endregion
+
+        //if (m_PullAction.GetStateDown(m_RightHandPose.inputSource))
+        //{
+        //    Debug.Log("m_PullAction.GetStateDown(m_RightHandPose.inputSource)");
+        //}
+        //if (m_PullAction.GetStateDown(m_LeftHandPose.inputSource))
+        //{
+        //    Debug.Log("m_PullAction.GetStateDown(m_LeftHandPose.inputSource)");
+        //}
     }
 }

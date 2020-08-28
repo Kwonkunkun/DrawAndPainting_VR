@@ -3,7 +3,6 @@ using System.Collections;
 
 public class handanimations : MonoBehaviour
 {
-
 	public GameObject ViveController;
 	public GameObject OculusController;
 	public GameObject StickUp;
@@ -44,6 +43,15 @@ public class handanimations : MonoBehaviour
 		StickUp.SetActive (false);
 		StickFront.SetActive (false);
     }
+
+    #region 애니메이션들
+	
+	public void SetPose(string pose)
+	{
+		anim.SetTrigger(pose);
+	}
+
+    #endregion
 
     void Update()
     {
