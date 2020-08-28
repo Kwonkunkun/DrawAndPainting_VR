@@ -117,5 +117,6 @@ public class LaserPointer : MonoBehaviour
 
         //라인 초기화
         lineRenderer = null;
+        linePosCnt = 0;
     }
 }
