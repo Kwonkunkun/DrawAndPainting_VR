@@ -56,12 +56,12 @@ public class LaserPointer : MonoBehaviour
                 Vector3 beforePos = lineRenderer.GetPosition(lineRenderer.positionCount - 1);
                 Vector3 presentPos = hit.point;
 
-                if (Vector3.Distance(beforePos, presentPos) < 0.001f)
+                if (Vector3.Distance(beforePos, presentPos) < 0.005f)
                     return;
             }
 
             //베지에 곡선 관련
-            pos[linePosCnt] = hit.point;
+            pos[linePosCnt] = hit.point + new Vector3(0.0f, 0.0f, -0.01f);
 
             //line point 추가
             if (linePosCnt == 2)
