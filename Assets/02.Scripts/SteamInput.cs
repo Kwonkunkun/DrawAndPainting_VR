@@ -40,6 +40,8 @@ public class SteamInput : MonoBehaviour
 
     public LaserPointer rightLaserPointer;
     public LaserPointer leftLaserPointer;
+
+    public EraseDraw eraseDraw;
     #endregion
 
     private void Update()
@@ -71,6 +73,13 @@ public class SteamInput : MonoBehaviour
             //2. 그리기 모드 off
             rightLaserPointer.DestoryLineRenderer();
         }
+
+        if (m_UpButton.GetStateDown(m_RightHandPose.inputSource))
+        {
+            Debug.Log("right teleport button down");
+            eraseDraw.EraseAll();
+        }
+
         #endregion
 
         #region 왼손 trigger
@@ -85,13 +94,6 @@ public class SteamInput : MonoBehaviour
         }
         #endregion
 
-        //if (m_PullAction.GetStateDown(m_RightHandPose.inputSource))
-        //{
-        //    Debug.Log("m_PullAction.GetStateDown(m_RightHandPose.inputSource)");
-        //}
-        //if (m_PullAction.GetStateDown(m_LeftHandPose.inputSource))
-        //{
-        //    Debug.Log("m_PullAction.GetStateDown(m_LeftHandPose.inputSource)");
-        //}
+       
     }
 }

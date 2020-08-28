@@ -116,6 +116,7 @@ public class LaserPointer : MonoBehaviour
         line = null;
 
         //라인 초기화
+        lineRenderer.gameObject.transform.SetParent(Canvas.transform);
         lineRenderer = null;
         linePosCnt = 0;
     }
