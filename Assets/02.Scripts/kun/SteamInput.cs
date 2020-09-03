@@ -31,6 +31,8 @@ public class SteamInput : MonoBehaviour
     public SteamVR_Behaviour_Pose m_RightHandPose = null;
     public SteamVR_Action_Boolean m_UpButton = null;
     public SteamVR_Action_Boolean m_PullAction = null;
+    public SteamVR_Action_Boolean m_TrackPadLeft = null;
+    public SteamVR_Action_Boolean m_TrackPadRight = null;
     //public SteamVR_Action_Vibration haptic = SteamVR_Actions.default_Haptic;
     #endregion
 
@@ -78,6 +80,20 @@ public class SteamInput : MonoBehaviour
         {
             Debug.Log("right teleport button down");
             eraseDraw.EraseAll();
+        }
+
+        if(m_TrackPadLeft.GetStateDown(m_RightHandPose.inputSource))
+        {
+            Debug.Log("trackpad left button down");
+            eraseDraw.EraseOne();
+        }
+
+        //스크린샷
+        if (m_TrackPadRight.GetStateDown(m_RightHandPose.inputSource))
+        {
+            Debug.Log("trackpad right button down");
+            eraseDraw.LineBold();
+            GameManager.instance.SavePresentPaint();     
         }
 
         #endregion
