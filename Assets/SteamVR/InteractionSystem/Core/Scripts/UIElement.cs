@@ -11,6 +11,7 @@ using System;
 
 namespace Valve.VR.InteractionSystem
 {
+	
 	//-------------------------------------------------------------------------
 	[RequireComponent( typeof( Interactable ) )]
 	public class UIElement : MonoBehaviour
@@ -80,7 +81,7 @@ namespace Valve.VR.InteractionSystem
 
 			UIElement uiElement = (UIElement)target;
 			if ( GUILayout.Button( "Click" ) )
-			{
+			{	
 				InputModule.instance.Submit( uiElement.gameObject );
 			}
 		}
