@@ -7,6 +7,7 @@
 using UnityEngine;
 using System.Collections;
 using Valve.VR;
+using UnityEngine.UI;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
@@ -16,9 +17,14 @@ namespace Valve.VR.InteractionSystem.Sample
 		private Coroutine buttonHintCoroutine;
 		private Coroutine textHintCoroutine;
 
+		//public ButtonEvent gameObject;
+		public Text txt;
+
 		//-------------------------------------------------
 		public void ShowButtonHints( Hand hand )
 		{
+			Debug.Log("ButtonHints");
+			txt.text = "ButtonHints";
 			if ( buttonHintCoroutine != null )
 			{
 				StopCoroutine( buttonHintCoroutine );
@@ -30,6 +36,8 @@ namespace Valve.VR.InteractionSystem.Sample
 		//-------------------------------------------------
 		public void ShowTextHints( Hand hand )
 		{
+			Debug.Log("TextHints");
+			txt.text = "TextHints";
 			if ( textHintCoroutine != null )
 			{
 				StopCoroutine( textHintCoroutine );
@@ -39,8 +47,12 @@ namespace Valve.VR.InteractionSystem.Sample
 
 
 		//-------------------------------------------------
-		public void DisableHints()
+		public void GameEnd()
 		{
+			Debug.Log("DisableHints");
+			txt.text = "DisableHints";
+			// 여기서 게임오브젝트에 게임종료 이벤트를 호출해야함.
+
 			if ( buttonHintCoroutine != null )
 			{
 				StopCoroutine( buttonHintCoroutine );
