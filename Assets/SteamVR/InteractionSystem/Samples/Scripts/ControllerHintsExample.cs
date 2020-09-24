@@ -51,6 +51,7 @@ namespace Valve.VR.InteractionSystem.Sample
 		{
 			Debug.Log("DisableHints");
 			txt.text = "DisableHints";
+			
 			// 여기서 게임오브젝트에 게임종료 이벤트를 호출해야함.
 
 			if ( buttonHintCoroutine != null )
