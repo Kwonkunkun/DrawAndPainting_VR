@@ -19445,6 +19445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e7ef0af37bbcb40ab89c4cc2481018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  txt: {fileID: 0}
 --- !u!1001 &1389829871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22228,6 +22229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e7ef0af37bbcb40ab89c4cc2481018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  txt: {fileID: 0}
 --- !u!1001 &1566292146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22376,7 +22378,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1957381615}
-        m_MethodName: DisableHints
+        m_MethodName: GameEnd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27708,6 +27710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e7ef0af37bbcb40ab89c4cc2481018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  txt: {fileID: 0}
 --- !u!1 &1962497286
 GameObject:
   m_ObjectHideFlags: 0
