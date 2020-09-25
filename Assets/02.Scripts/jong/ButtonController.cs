@@ -12,7 +12,7 @@ public class ButtonController : MonoBehaviour
 
     public GameObject player;
     public GameObject menu;
-    public Text txt;
+    //public Text txt;
 
     //-------------------------------------------------
     public void ShowButtonHints(Hand hand)
@@ -66,7 +66,7 @@ public class ButtonController : MonoBehaviour
     public void GameEnd()   // 게임종료 버튼
     {
 		// 게임 종료시에 이벤트 호출
-		gameObject.GetComponent<ButtonEvent>().BtnEndPy();
+		player.GetComponent<ButtonEvent>().BtnEndPy();
 
         if (buttonHintCoroutine != null)
         {
@@ -90,7 +90,7 @@ public class ButtonController : MonoBehaviour
     public void ReturnMenu()   // 메뉴로 돌아가기 버튼
     {
 		// 게임 종료시에 이벤트 호출
-		gameObject.GetComponent<PlayerItween>().ReturnMenu();
+		player.GetComponent<PlayerItween>().ReturnMenu();
 
         if (buttonHintCoroutine != null)
         {
@@ -114,7 +114,7 @@ public class ButtonController : MonoBehaviour
     public void ImageRecog()   // 이미지 인식버튼 이벤트 호출
     {
 		// 게임 종료시에 이벤트 호출
-		gameObject.GetComponent<ButtonEvent>().BtnImgCheck();
+		player.GetComponent<ButtonEvent>().BtnImgCheck();
 
         if (buttonHintCoroutine != null)
         {
