@@ -14,6 +14,9 @@ public class ButtonController : MonoBehaviour
     public GameObject menu;
     //public Text txt;
 
+    public GameObject LeftDoor;
+    public GameObject RightDoor;
+
     //-------------------------------------------------
     public void ShowButtonHints(Hand hand)
     {
@@ -37,10 +40,12 @@ public class ButtonController : MonoBehaviour
 
 	public void GameStart() // 게임시작 버튼
     {
+        LeftDoor.GetComponent<Animator>().SetBool("Open",true);
+        RightDoor.GetComponent<Animator>().SetBool("Open",true);
+
 		// 게임 시작시에 이벤트 호출
 		player.GetComponent<PlayerItween>().StartGame();
-        
-        menu.SetActive(false);
+
 
         if (buttonHintCoroutine != null)
         {
@@ -89,6 +94,9 @@ public class ButtonController : MonoBehaviour
 
     public void ReturnMenu()   // 메뉴로 돌아가기 버튼
     {
+        LeftDoor.GetComponent<Animator>().SetBool("Open",true);
+        RightDoor.GetComponent<Animator>().SetBool("Open",true);
+        
 		// 게임 종료시에 이벤트 호출
 		player.GetComponent<PlayerItween>().ReturnMenu();
 
