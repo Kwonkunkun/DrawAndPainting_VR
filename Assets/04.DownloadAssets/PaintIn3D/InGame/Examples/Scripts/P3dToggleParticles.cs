@@ -20,24 +20,44 @@ namespace PaintIn3D
 		/// <summary>Should painting triggered from this component be eligible for being undone?</summary>
 		public bool StoreStates { set { storeStates = value; } get { return storeStates; } } [SerializeField] protected bool storeStates = true;
 
+		//protected virtual void LateUpdate()
+		//{
+		//	if (target != null)
+		//	{
+		//		if (P3dInputManager.IsPressed(key) == true)
+		//		{
+		//			if (storeStates == true && target.isPlaying == false)
+		//			{
+		//				P3dStateManager.StoreAllStates();
+		//			}
+
+		//			target.Play();
+		//		}
+		//		else
+		//		{
+		//			target.Stop();
+		//		}
+		//	}
+		//}
 		protected virtual void LateUpdate()
 		{
-			if (target != null)
-			{
-				if (P3dInputManager.IsPressed(key) == true)
-				{
-					if (storeStates == true && target.isPlaying == false)
-					{
-						P3dStateManager.StoreAllStates();
-					}
+			target.Play();
+			//if (target != null)
+			//{
+			//	if (P3dInputManager.IsPressed(key) == true)
+			//	{
+			//		if (storeStates == true && target.isPlaying == false)
+			//		{
+			//			P3dStateManager.StoreAllStates();
+			//		}
 
-					target.Play();
-				}
-				else
-				{
-					target.Stop();
-				}
-			}
+			//		target.Play();
+			//	}
+			//	else
+			//	{
+			//		target.Stop();
+			//	}
+			//}
 		}
 	}
 }

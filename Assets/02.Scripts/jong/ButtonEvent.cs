@@ -11,11 +11,6 @@ public class ButtonEvent : MonoBehaviour
         myAgent = gameObject.GetComponent<MyAgent>();
     }
 
-    void Update()
-    {
-
-    }
-
     public void BtnImgCheck()
     {
         Debug.Log("이미지 인식버튼");
