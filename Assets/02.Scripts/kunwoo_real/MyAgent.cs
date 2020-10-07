@@ -7,8 +7,8 @@ using MLAgents;
 public class MyAgent : Agent
 {
     // 파이썬 종료, 이미지 처리 여부
-    public bool isEndPy;
-    public bool isImgCheck;
+    public bool isEndPy = false;
+    public bool isImgCheck = false;
 
     public List<GameObject> DrawObjects;
 
@@ -44,13 +44,16 @@ public class MyAgent : Agent
     public override void AgentAction(float[] vectorAction, string textAction)
     {
         int action = (int)vectorAction[0];
-        if (action == 0 || isImgCheck == false)
+        if (isImgCheck == false){
             return;
+        } else {
+            //인식이 되었을때 오브젝트 생성
+            //GameObject obj = Instantiate(DrawObjects[action-1]);
+            isImgCheck = false;
+            action = 0;   
+        }
 
-        //인식이 되었을때 오브젝트 생성
-        GameObject obj = Instantiate(DrawObjects[action-1]);
-        isImgCheck = false;
-        action = 0;      
+           
 
 
         //obj를 형이 paint 매니저 (싱글톤 추천) 를 만들어서 넣으면됨 
