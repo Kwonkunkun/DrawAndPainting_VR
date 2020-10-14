@@ -1,2 +1,1 @@
-# VR_QuickDraw
-VR_QuickDraw
+# DrawAndPainting_VR
