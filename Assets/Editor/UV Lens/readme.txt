@@ -1,0 +1,5 @@
+--- Usage
+  - Go to Window > Tools > UV Lens
+  - Either:
+     - Select an object with a mesh
+     - Use the object field to select a mesh

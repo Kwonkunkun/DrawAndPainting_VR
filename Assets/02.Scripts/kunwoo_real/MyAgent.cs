@@ -7,7 +7,7 @@ using MLAgents;
 public class MyAgent : Agent
 {
     // 파이썬 종료, 이미지 처리 여부
-    public bool isEndPy = false;
+    public bool isEndPy = true;
     public bool isImgCheck = false;
 
     public List<GameObject> DrawObjects;
@@ -15,7 +15,7 @@ public class MyAgent : Agent
     #region User define function
     public void EndPython()
     {
-        isEndPy = true;
+        isEndPy = false;
     }
     public void CheckImage()
     {
