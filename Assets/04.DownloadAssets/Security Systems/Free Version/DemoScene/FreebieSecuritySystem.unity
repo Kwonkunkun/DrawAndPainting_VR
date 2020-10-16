@@ -94,8 +94,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -145,8 +146,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314982613}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -240,9 +242,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1795021606
 MeshRenderer:
@@ -258,6 +260,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -269,6 +272,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -363,6 +367,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -374,6 +379,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -504,6 +510,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3587750393782493337, guid: 47e7308b8e380714c97bf34187da1b0a,
+        type: 3}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587750393782493337, guid: 47e7308b8e380714c97bf34187da1b0a,
+        type: 3}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4822179750397416521, guid: 47e7308b8e380714c97bf34187da1b0a,
         type: 3}
       propertyPath: m_Name
@@ -514,14 +530,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SecurityCamera
       objectReference: {fileID: 0}
-    - target: {fileID: 3587750393782493337, guid: 47e7308b8e380714c97bf34187da1b0a,
+    - target: {fileID: 8051370414163103041, guid: 47e7308b8e380714c97bf34187da1b0a,
         type: 3}
-      propertyPath: m_HDR
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3587750393782493337, guid: 47e7308b8e380714c97bf34187da1b0a,
+    - target: {fileID: 8051370414163103041, guid: 47e7308b8e380714c97bf34187da1b0a,
         type: 3}
-      propertyPath: m_AllowMSAA
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8408373576768677466, guid: 47e7308b8e380714c97bf34187da1b0a,
@@ -579,16 +595,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 20.892
       objectReference: {fileID: 0}
-    - target: {fileID: 8051370414163103041, guid: 47e7308b8e380714c97bf34187da1b0a,
-        type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8051370414163103041, guid: 47e7308b8e380714c97bf34187da1b0a,
-        type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47e7308b8e380714c97bf34187da1b0a, type: 3}
 --- !u!1001 &8762009741015768037
@@ -598,16 +604,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6456363405161935073, guid: d37c84bfb8ca47345bab04e1a6c622c5,
-        type: 3}
-      propertyPath: m_Name
-      value: TabletDisplay01
-      objectReference: {fileID: 0}
-    - target: {fileID: 6456363405161935073, guid: d37c84bfb8ca47345bab04e1a6c622c5,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 690562261663448245, guid: d37c84bfb8ca47345bab04e1a6c622c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -668,6 +664,36 @@ PrefabInstance:
       propertyPath: m_securityCamera
       value: 
       objectReference: {fileID: 1994236705}
+    - target: {fileID: 3545279581176588032, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: toggleCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3545279581176588032, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211782598800362618, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456363405161935073, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: m_Name
+      value: TabletDisplay01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456363405161935073, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456363405161935073, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7907209384337694925, guid: d37c84bfb8ca47345bab04e1a6c622c5,
         type: 3}
       propertyPath: m_ReceiveShadows
@@ -677,6 +703,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907209384337694925, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001205425629451299, guid: d37c84bfb8ca47345bab04e1a6c622c5,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d37c84bfb8ca47345bab04e1a6c622c5, type: 3}
