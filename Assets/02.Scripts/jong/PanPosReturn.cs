@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PanPosReturn : MonoBehaviour
 {
+    /* 펜이 떨어졌을때 다시 책상 위로 올리는 코드 */
 
     public GameObject returnPos;
     // Start is called before the first frame update

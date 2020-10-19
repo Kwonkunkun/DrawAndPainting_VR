@@ -5,6 +5,8 @@ using PaintIn3D;
 
 public class GetPanColor : MonoBehaviour
 {
+    /* 펜의 색을 트리거 이벤트로 변경 */
+
     P3dPaintSphere penColor;
     
     // Start is called before the first frame update

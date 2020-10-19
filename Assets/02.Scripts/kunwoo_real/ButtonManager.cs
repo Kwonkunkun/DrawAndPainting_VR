@@ -23,7 +23,7 @@ public class ButtonManager : MonoBehaviour
 
     }
 
-    IEnumerator canvasClearCo(){
+    IEnumerator canvasClearCo(){    // 그림판 지우기 버튼 이벤트
         
         canvasClearBtn.SetActive(true);
         yield return new WaitForSeconds(0.5f);

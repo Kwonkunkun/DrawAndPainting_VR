@@ -3,6 +3,8 @@ using Valve.VR;
 
 public class PaletteMgr : MonoBehaviour
 {
+    /*  */
+
     //왼손 컨트롤러의 Input Source
     public SteamVR_Input_Sources leftHand = SteamVR_Input_Sources.LeftHand;
     //트랙패드의 클릭 여부
