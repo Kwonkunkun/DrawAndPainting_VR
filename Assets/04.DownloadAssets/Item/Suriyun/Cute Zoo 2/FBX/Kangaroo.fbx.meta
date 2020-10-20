@@ -1,78 +1,218 @@
 fileFormatVersion: 2
 guid: 25e746058a054c649b991c302d135281
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: ball_l
-    100002: ball_r
-    100004: calf_l
-    100006: calf_r
-    100008: ear_l_01
-    100010: ear_l_01 1
-    100012: ear_r_01
-    100014: ear_r_02
-    100016: foot_l
-    100018: foot_r
-    100020: hand_end_l
-    100022: hand_end_r
-    100024: hand_l
-    100026: hand_r
-    100028: head
-    100030: head_end
-    100032: //RootNode
-    100034: kangaroo
-    100036: lowerarm_l
-    100038: lowerarm_r
-    100040: neck_01
-    100042: nurbsCircle2
-    100044: pelvis
-    100046: spine_01
-    100048: spine_02
-    100050: tail_01
-    100052: tail_02
-    100054: tail_03
-    100056: tail_04
-    100058: thigh_l
-    100060: thigh_r
-    100062: upperarm_l
-    100064: upperarm_r
-    400000: ball_l
-    400002: ball_r
-    400004: calf_l
-    400006: calf_r
-    400008: ear_l_01
-    400010: ear_l_01 1
-    400012: ear_r_01
-    400014: ear_r_02
-    400016: foot_l
-    400018: foot_r
-    400020: hand_end_l
-    400022: hand_end_r
-    400024: hand_l
-    400026: hand_r
-    400028: head
-    400030: head_end
-    400032: //RootNode
-    400034: kangaroo
-    400036: lowerarm_l
-    400038: lowerarm_r
-    400040: neck_01
-    400042: nurbsCircle2
-    400044: pelvis
-    400046: spine_01
-    400048: spine_02
-    400050: tail_01
-    400052: tail_02
-    400054: tail_03
-    400056: tail_04
-    400058: thigh_l
-    400060: thigh_r
-    400062: upperarm_l
-    400064: upperarm_r
-    2100000: M_Kangaroo
-    4300000: kangaroo
-    9500000: //RootNode
-    13700000: kangaroo
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ball_l
+  - first:
+      1: 100002
+    second: ball_r
+  - first:
+      1: 100004
+    second: calf_l
+  - first:
+      1: 100006
+    second: calf_r
+  - first:
+      1: 100008
+    second: ear_l_01
+  - first:
+      1: 100010
+    second: ear_l_01 1
+  - first:
+      1: 100012
+    second: ear_r_01
+  - first:
+      1: 100014
+    second: ear_r_02
+  - first:
+      1: 100016
+    second: foot_l
+  - first:
+      1: 100018
+    second: foot_r
+  - first:
+      1: 100020
+    second: hand_end_l
+  - first:
+      1: 100022
+    second: hand_end_r
+  - first:
+      1: 100024
+    second: hand_l
+  - first:
+      1: 100026
+    second: hand_r
+  - first:
+      1: 100028
+    second: head
+  - first:
+      1: 100030
+    second: head_end
+  - first:
+      1: 100032
+    second: //RootNode
+  - first:
+      1: 100034
+    second: kangaroo
+  - first:
+      1: 100036
+    second: lowerarm_l
+  - first:
+      1: 100038
+    second: lowerarm_r
+  - first:
+      1: 100040
+    second: neck_01
+  - first:
+      1: 100042
+    second: nurbsCircle2
+  - first:
+      1: 100044
+    second: pelvis
+  - first:
+      1: 100046
+    second: spine_01
+  - first:
+      1: 100048
+    second: spine_02
+  - first:
+      1: 100050
+    second: tail_01
+  - first:
+      1: 100052
+    second: tail_02
+  - first:
+      1: 100054
+    second: tail_03
+  - first:
+      1: 100056
+    second: tail_04
+  - first:
+      1: 100058
+    second: thigh_l
+  - first:
+      1: 100060
+    second: thigh_r
+  - first:
+      1: 100062
+    second: upperarm_l
+  - first:
+      1: 100064
+    second: upperarm_r
+  - first:
+      4: 400000
+    second: ball_l
+  - first:
+      4: 400002
+    second: ball_r
+  - first:
+      4: 400004
+    second: calf_l
+  - first:
+      4: 400006
+    second: calf_r
+  - first:
+      4: 400008
+    second: ear_l_01
+  - first:
+      4: 400010
+    second: ear_l_01 1
+  - first:
+      4: 400012
+    second: ear_r_01
+  - first:
+      4: 400014
+    second: ear_r_02
+  - first:
+      4: 400016
+    second: foot_l
+  - first:
+      4: 400018
+    second: foot_r
+  - first:
+      4: 400020
+    second: hand_end_l
+  - first:
+      4: 400022
+    second: hand_end_r
+  - first:
+      4: 400024
+    second: hand_l
+  - first:
+      4: 400026
+    second: hand_r
+  - first:
+      4: 400028
+    second: head
+  - first:
+      4: 400030
+    second: head_end
+  - first:
+      4: 400032
+    second: //RootNode
+  - first:
+      4: 400034
+    second: kangaroo
+  - first:
+      4: 400036
+    second: lowerarm_l
+  - first:
+      4: 400038
+    second: lowerarm_r
+  - first:
+      4: 400040
+    second: neck_01
+  - first:
+      4: 400042
+    second: nurbsCircle2
+  - first:
+      4: 400044
+    second: pelvis
+  - first:
+      4: 400046
+    second: spine_01
+  - first:
+      4: 400048
+    second: spine_02
+  - first:
+      4: 400050
+    second: tail_01
+  - first:
+      4: 400052
+    second: tail_02
+  - first:
+      4: 400054
+    second: tail_03
+  - first:
+      4: 400056
+    second: tail_04
+  - first:
+      4: 400058
+    second: thigh_l
+  - first:
+      4: 400060
+    second: thigh_r
+  - first:
+      4: 400062
+    second: upperarm_l
+  - first:
+      4: 400064
+    second: upperarm_r
+  - first:
+      21: 2100000
+    second: M_Kangaroo
+  - first:
+      43: 4300000
+    second: kangaroo
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: kangaroo
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -80,7 +220,7 @@ ModelImporter:
       name: M_Kangaroo
     second: {fileID: 2100000, guid: 8f5e5f9fc26c34d489bbe1e6a803c25b, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 2
     materialLocation: 0
@@ -109,29 +249,32 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -140,10 +283,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -153,13 +296,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.03
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

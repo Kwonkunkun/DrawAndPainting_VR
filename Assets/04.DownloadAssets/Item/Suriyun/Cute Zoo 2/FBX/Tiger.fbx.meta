@@ -1,68 +1,188 @@
 fileFormatVersion: 2
 guid: d93fde117eda9894fa9fe5dec8c9ee68
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Foot_L1
-    100002: Foot_L2
-    100004: Foot_R1
-    100006: Foot_R2
-    100008: Head
-    100010: Head_end
-    100012: Hip_L1
-    100014: Hip_L2
-    100016: Hip_R1
-    100018: Hip_R2
-    100020: Knee_L1
-    100022: Knee_L2
-    100024: Knee_R1
-    100026: Knee_R2
-    100028: Neck
-    100030: Root
-    100032: Spine1
-    100034: Spine2
-    100036: Tail1
-    100038: Tail2
-    100040: Tail3
-    100042: Tail4
-    100044: //RootNode
-    100046: Tiger
-    100048: Toes_L1
-    100050: Toes_L2
-    100052: Toes_R1
-    100054: Toes_R2
-    400000: Foot_L1
-    400002: Foot_L2
-    400004: Foot_R1
-    400006: Foot_R2
-    400008: Head
-    400010: Head_end
-    400012: Hip_L1
-    400014: Hip_L2
-    400016: Hip_R1
-    400018: Hip_R2
-    400020: Knee_L1
-    400022: Knee_L2
-    400024: Knee_R1
-    400026: Knee_R2
-    400028: Neck
-    400030: Root
-    400032: Spine1
-    400034: Spine2
-    400036: Tail1
-    400038: Tail2
-    400040: Tail3
-    400042: Tail4
-    400044: Tiger
-    400046: //RootNode
-    400048: Toes_L1
-    400050: Toes_L2
-    400052: Toes_R1
-    400054: Toes_R2
-    2100000: M_TigerA
-    4300000: Tiger
-    9500000: //RootNode
-    13700000: Tiger
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Foot_L1
+  - first:
+      1: 100002
+    second: Foot_L2
+  - first:
+      1: 100004
+    second: Foot_R1
+  - first:
+      1: 100006
+    second: Foot_R2
+  - first:
+      1: 100008
+    second: Head
+  - first:
+      1: 100010
+    second: Head_end
+  - first:
+      1: 100012
+    second: Hip_L1
+  - first:
+      1: 100014
+    second: Hip_L2
+  - first:
+      1: 100016
+    second: Hip_R1
+  - first:
+      1: 100018
+    second: Hip_R2
+  - first:
+      1: 100020
+    second: Knee_L1
+  - first:
+      1: 100022
+    second: Knee_L2
+  - first:
+      1: 100024
+    second: Knee_R1
+  - first:
+      1: 100026
+    second: Knee_R2
+  - first:
+      1: 100028
+    second: Neck
+  - first:
+      1: 100030
+    second: Root
+  - first:
+      1: 100032
+    second: Spine1
+  - first:
+      1: 100034
+    second: Spine2
+  - first:
+      1: 100036
+    second: Tail1
+  - first:
+      1: 100038
+    second: Tail2
+  - first:
+      1: 100040
+    second: Tail3
+  - first:
+      1: 100042
+    second: Tail4
+  - first:
+      1: 100044
+    second: //RootNode
+  - first:
+      1: 100046
+    second: Tiger
+  - first:
+      1: 100048
+    second: Toes_L1
+  - first:
+      1: 100050
+    second: Toes_L2
+  - first:
+      1: 100052
+    second: Toes_R1
+  - first:
+      1: 100054
+    second: Toes_R2
+  - first:
+      4: 400000
+    second: Foot_L1
+  - first:
+      4: 400002
+    second: Foot_L2
+  - first:
+      4: 400004
+    second: Foot_R1
+  - first:
+      4: 400006
+    second: Foot_R2
+  - first:
+      4: 400008
+    second: Head
+  - first:
+      4: 400010
+    second: Head_end
+  - first:
+      4: 400012
+    second: Hip_L1
+  - first:
+      4: 400014
+    second: Hip_L2
+  - first:
+      4: 400016
+    second: Hip_R1
+  - first:
+      4: 400018
+    second: Hip_R2
+  - first:
+      4: 400020
+    second: Knee_L1
+  - first:
+      4: 400022
+    second: Knee_L2
+  - first:
+      4: 400024
+    second: Knee_R1
+  - first:
+      4: 400026
+    second: Knee_R2
+  - first:
+      4: 400028
+    second: Neck
+  - first:
+      4: 400030
+    second: Root
+  - first:
+      4: 400032
+    second: Spine1
+  - first:
+      4: 400034
+    second: Spine2
+  - first:
+      4: 400036
+    second: Tail1
+  - first:
+      4: 400038
+    second: Tail2
+  - first:
+      4: 400040
+    second: Tail3
+  - first:
+      4: 400042
+    second: Tail4
+  - first:
+      4: 400044
+    second: Tiger
+  - first:
+      4: 400046
+    second: //RootNode
+  - first:
+      4: 400048
+    second: Toes_L1
+  - first:
+      4: 400050
+    second: Toes_L2
+  - first:
+      4: 400052
+    second: Toes_R1
+  - first:
+      4: 400054
+    second: Toes_R2
+  - first:
+      21: 2100000
+    second: M_TigerA
+  - first:
+      43: 4300000
+    second: Tiger
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Tiger
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -70,7 +190,7 @@ ModelImporter:
       name: M_TigerA
     second: {fileID: 2100000, guid: 38a6d94644d380c48aeec2c4b64e0607, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 2
     materialLocation: 0
@@ -99,29 +219,32 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -130,10 +253,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -143,13 +266,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.03
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

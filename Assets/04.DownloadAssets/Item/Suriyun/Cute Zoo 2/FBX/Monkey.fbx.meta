@@ -1,76 +1,212 @@
 fileFormatVersion: 2
 guid: 595677d0356ad1c4ab3d71f292f7f91f
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: ball_l
-    100002: ball_r
-    100004: calf_l
-    100006: calf_r
-    100008: clavicle_l
-    100010: clavicle_r
-    100012: Cute_Monkey
-    100014: foot_l
-    100016: foot_r
-    100018: hand_l
-    100020: hand_r
-    100022: head
-    100024: head_end
-    100026: head_socket
-    100028: index_proximal_phalange_l
-    100030: index_proximal_phalange_r
-    100032: lowerarm_l
-    100034: lowerarm_r
-    100036: //RootNode
-    100038: neck_01
-    100040: pelvis
-    100042: root
-    100044: spine_01
-    100046: spine_02
-    100048: tail_01
-    100050: tail_02
-    100052: tail_03
-    100054: tail_root
-    100056: thigh_l
-    100058: thigh_r
-    100060: upperarm_l
-    100062: upperarm_r
-    400000: ball_l
-    400002: ball_r
-    400004: calf_l
-    400006: calf_r
-    400008: clavicle_l
-    400010: clavicle_r
-    400012: Cute_Monkey
-    400014: foot_l
-    400016: foot_r
-    400018: hand_l
-    400020: hand_r
-    400022: head
-    400024: head_end
-    400026: head_socket
-    400028: index_proximal_phalange_l
-    400030: index_proximal_phalange_r
-    400032: lowerarm_l
-    400034: lowerarm_r
-    400036: //RootNode
-    400038: neck_01
-    400040: pelvis
-    400042: root
-    400044: spine_01
-    400046: spine_02
-    400048: tail_01
-    400050: tail_02
-    400052: tail_03
-    400054: tail_root
-    400056: thigh_l
-    400058: thigh_r
-    400060: upperarm_l
-    400062: upperarm_r
-    2100000: M_MonkeyA
-    4300000: Cute_Monkey
-    9500000: //RootNode
-    13700000: Cute_Monkey
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ball_l
+  - first:
+      1: 100002
+    second: ball_r
+  - first:
+      1: 100004
+    second: calf_l
+  - first:
+      1: 100006
+    second: calf_r
+  - first:
+      1: 100008
+    second: clavicle_l
+  - first:
+      1: 100010
+    second: clavicle_r
+  - first:
+      1: 100012
+    second: Cute_Monkey
+  - first:
+      1: 100014
+    second: foot_l
+  - first:
+      1: 100016
+    second: foot_r
+  - first:
+      1: 100018
+    second: hand_l
+  - first:
+      1: 100020
+    second: hand_r
+  - first:
+      1: 100022
+    second: head
+  - first:
+      1: 100024
+    second: head_end
+  - first:
+      1: 100026
+    second: head_socket
+  - first:
+      1: 100028
+    second: index_proximal_phalange_l
+  - first:
+      1: 100030
+    second: index_proximal_phalange_r
+  - first:
+      1: 100032
+    second: lowerarm_l
+  - first:
+      1: 100034
+    second: lowerarm_r
+  - first:
+      1: 100036
+    second: //RootNode
+  - first:
+      1: 100038
+    second: neck_01
+  - first:
+      1: 100040
+    second: pelvis
+  - first:
+      1: 100042
+    second: root
+  - first:
+      1: 100044
+    second: spine_01
+  - first:
+      1: 100046
+    second: spine_02
+  - first:
+      1: 100048
+    second: tail_01
+  - first:
+      1: 100050
+    second: tail_02
+  - first:
+      1: 100052
+    second: tail_03
+  - first:
+      1: 100054
+    second: tail_root
+  - first:
+      1: 100056
+    second: thigh_l
+  - first:
+      1: 100058
+    second: thigh_r
+  - first:
+      1: 100060
+    second: upperarm_l
+  - first:
+      1: 100062
+    second: upperarm_r
+  - first:
+      4: 400000
+    second: ball_l
+  - first:
+      4: 400002
+    second: ball_r
+  - first:
+      4: 400004
+    second: calf_l
+  - first:
+      4: 400006
+    second: calf_r
+  - first:
+      4: 400008
+    second: clavicle_l
+  - first:
+      4: 400010
+    second: clavicle_r
+  - first:
+      4: 400012
+    second: Cute_Monkey
+  - first:
+      4: 400014
+    second: foot_l
+  - first:
+      4: 400016
+    second: foot_r
+  - first:
+      4: 400018
+    second: hand_l
+  - first:
+      4: 400020
+    second: hand_r
+  - first:
+      4: 400022
+    second: head
+  - first:
+      4: 400024
+    second: head_end
+  - first:
+      4: 400026
+    second: head_socket
+  - first:
+      4: 400028
+    second: index_proximal_phalange_l
+  - first:
+      4: 400030
+    second: index_proximal_phalange_r
+  - first:
+      4: 400032
+    second: lowerarm_l
+  - first:
+      4: 400034
+    second: lowerarm_r
+  - first:
+      4: 400036
+    second: //RootNode
+  - first:
+      4: 400038
+    second: neck_01
+  - first:
+      4: 400040
+    second: pelvis
+  - first:
+      4: 400042
+    second: root
+  - first:
+      4: 400044
+    second: spine_01
+  - first:
+      4: 400046
+    second: spine_02
+  - first:
+      4: 400048
+    second: tail_01
+  - first:
+      4: 400050
+    second: tail_02
+  - first:
+      4: 400052
+    second: tail_03
+  - first:
+      4: 400054
+    second: tail_root
+  - first:
+      4: 400056
+    second: thigh_l
+  - first:
+      4: 400058
+    second: thigh_r
+  - first:
+      4: 400060
+    second: upperarm_l
+  - first:
+      4: 400062
+    second: upperarm_r
+  - first:
+      21: 2100000
+    second: M_MonkeyA
+  - first:
+      43: 4300000
+    second: Cute_Monkey
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Cute_Monkey
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -78,7 +214,7 @@ ModelImporter:
       name: M_MonkeyA
     second: {fileID: 2100000, guid: 4011d5212fff22a458cfdd1bfbea08b2, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 2
     materialLocation: 0
@@ -107,29 +243,32 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.2
+    globalScale: 0.4
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.003
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -138,10 +277,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -151,13 +290,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.004
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
