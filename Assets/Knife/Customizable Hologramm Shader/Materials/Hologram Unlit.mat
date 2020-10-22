@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hologram Unlit
+  m_Shader: {fileID: 4800000, guid: e99f8b80b1693284587af0c131f61f3d, type: 3}
+  m_ShaderKeywords: _COLORGLITCHFEATURE_ON _GLITCHDEBUG_ON _GRAINFEATURE_ON _POSITIONSPACEFEATURE_WORLD
+    _RANDOMGLITCHFEATURE_ON _SOFTINTERSECTION_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DefaultLine:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DefaultLine1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Glitch1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Line:
+        m_Texture: {fileID: 2800000, guid: 88eb97e78f86c604bb00864c0dbeffc1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Line1:
+        m_Texture: {fileID: 2800000, guid: ef301d4822ac111469bda406e1b4bc7c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Line2:
+        m_Texture: {fileID: 2800000, guid: a6ddbfbf28b5acb44921ca832c5c7f18, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Line3:
+        m_Texture: {fileID: 2800000, guid: d7d0421360000d64eb0bc854e928e65f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LineGlitch:
+        m_Texture: {fileID: 2800000, guid: a6ddbfbf28b5acb44921ca832c5c7f18, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 2800000, guid: 88eb97e78f86c604bb00864c0dbeffc1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlphaMaskAffect: 0.5
+    - _AlphaMaskFeature: 0
+    - _ColorGlitchAffect: 0.147
+    - _ColorGlitchFeature: 1
+    - _ColorPeriodcTiling: 0
+    - _ColorPeriodicSpeed: 0
+    - _ColorPeriodicSpeedX: 0
+    - _ConstantGlitch: 0
+    - _CullMode: 2
+    - _DebugGlitch: 0
+    - _DissolveFeature: 0
+    - _DissolveHide: -1
+    - _EdgeLength: 15
+    - _Float0: 1
+    - _Float1: 1
+    - _Float2: 1
+    - _Float3: 0
+    - _FresnelAlphaFeature: 0
+    - _FresnelAlphaPower: 3.65
+    - _FresnelAlphaScale: 1
+    - _FresnelColorFeature: 0
+    - _FresnelFeature: 0
+    - _FresnelPower: 1
+    - _FresnelScale: 1
+    - _Glitch1Amount: 0.117
+    - _Glitch1Speed: 0
+    - _Glitch1SpeedX: 0
+    - _Glitch1Tiling: 0
+    - _GlitchDebug: 1
+    - _GlitchPeriodcTiling: 0
+    - _GlitchPeriodicSpeed: 0
+    - _GlitchPeriodicSpeedX: 0
+    - _GlitchPeriodicTiling: 0
+    - _GlitchPower: 0
+    - _GlitchRemapMaxNew: 0
+    - _GlitchRemapMaxOld: 0
+    - _GlitchRemapMinNew: 0
+    - _GlitchRemapMinOld: 0
+    - _GrainAffect: 1
+    - _GrainFeature: 1
+    - _Hide: -1
+    - _Line1Alpha: 0.15
+    - _Line1Feature: 0
+    - _Line1Frequency: 100
+    - _Line1Hardness: 1.45
+    - _Line1InvertedThickness: 0
+    - _Line1Speed: -3.57
+    - _Line2Alpha: 0.1
+    - _Line2Feature: 0
+    - _Line2Frequency: 1
+    - _Line2Hardness: 2
+    - _Line2InvertedThickness: 0.255
+    - _Line2Speed: -1
+    - _LineAlpha: 1
+    - _LineAlpha1: 0.15
+    - _LineAlpha2: 0.1
+    - _LineBothFeature: 0
+    - _LineFrequency: 6
+    - _LineFrequency1: 100
+    - _LineFrequency2: 1
+    - _LineFrequencyGlitch: 0.2
+    - _LineGlitchFeature: 0
+    - _LineGlitchFrequency: 0.2
+    - _LineGlitchHardness: 5
+    - _LineGlitchInvertedThickness: 0.825
+    - _LineGlitchSpeed: -0.26
+    - _LineHardness: 1
+    - _LineHardness1: 1.45
+    - _LineHardness2: 2
+    - _LineHardnessGlitch: 5
+    - _LineInvertedThickness: 0
+    - _LineInvertedThickness1: 0
+    - _LineInvertedThickness2: 0.255
+    - _LineInvertedThicknessGlitch: 0.825
+    - _LineSpeed: 1.79
+    - _LineSpeed1: -3.57
+    - _LineSpeed2: -1
+    - _LineSpeedGlitch: -0.26
+    - _MaskFalloff: 0
+    - _MaskFeature: 0
+    - _NormalAffect: 0.589
+    - _NormalMapFeature: 0
+    - _NormalScale: 1
+    - _PositionDirection: 1
+    - _PositionFeature: 1
+    - _PositionSpaceFeature: 0
+    - _RandomGlitchAmount: 0.089
+    - _RandomGlitchConstant: 0
+    - _RandomGlitchFeature: 1
+    - _RandomGlitchTiling: 2.83
+    - _RandomOffset: 75132
+    - _SoftIntersection: 0
+    - _SoftIntersection1Affect: 1
+    - _SoftIntersection1Distance: 0
+    - _SoftIntersection1Feature: 0
+    - _SoftIntersection1Intensity: 1
+    - _SoftIntersection2Affect: 1
+    - _SoftIntersection2Distance: 0
+    - _SoftIntersection2Feature: 0
+    - _SoftIntersection2Intensity: 1
+    - _SoftIntersectionDistance: 0.1
+    - _SoftIntersectionFeature: 0
+    - _SoftIntersectionIntensity: 5.89
+    - _TessMax: 25
+    - _TessMin: 10
+    - _TessPhongStrength: 0.5
+    - _TessValue: 1
+    - _Tesselation: 0
+    - _ZWrite: 0
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 0.620945, g: 1.420074, b: 3.953349, a: 0.05098039}
+    - _DissolveScale: {r: 0.1, g: 1.01, b: 5, a: 0}
+    - _FresnelColor: {r: 0.620945, g: 1.420074, b: 3.953349, a: 1}
+    - _GlitchOffset: {r: 0.03, g: 0, b: 0, a: 0}
+    - _GlitchOffset1: {r: -0.5, g: 0, b: 0, a: 0}
+    - _GrainScale: {r: 50, g: 50, b: 50, a: 0}
+    - _GrainValues: {r: 0, g: 1, b: 0, a: 0}
+    - _LineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LineColor1: {r: 0.620945, g: 1.420074, b: 3.953349, a: 1}
+    - _LineColor2: {r: 0.620945, g: 1.420074, b: 3.953349, a: 1}
+    - _LineGlitchOffset: {r: 0.03, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 0.620945, g: 1.420074, b: 3.953349, a: 0.05098039}
+    - _MaskCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _MaskSize: {r: 0, g: 0, b: 0, a: 0}
+    - _RandomGlitchOffset: {r: -0.5, g: 0, b: 0, a: 0}
+    - _Scale: {r: 0.1, g: 1.01, b: 5, a: 0}

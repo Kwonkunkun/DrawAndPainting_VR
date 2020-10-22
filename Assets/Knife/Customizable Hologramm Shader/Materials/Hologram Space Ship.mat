@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hologram Space Ship
+  m_Shader: {fileID: 4800000, guid: e99f8b80b1693284587af0c131f61f3d, type: 3}
+  m_ShaderKeywords: _COLORGLITCHFEATURE_ON _DISSOLVEFEATURE_ON _FRESNELFEATURE_ON
+    _GRAINFEATURE_ON _MASKFEATURE_ON _POSITIONFEATURE_Y _POSITIONSPACEFEATURE_WORLD
+    _RANDOMGLITCHFEATURE_ON _SOFTINTERSECTION1FEATURE_OFF _SOFTINTERSECTION2FEATURE_OFF
+    _VOXELIZATIONFEATURE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Displacement:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Line1:
+        m_Texture: {fileID: 2800000, guid: 88eb97e78f86c604bb00864c0dbeffc1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Line2:
+        m_Texture: {fileID: 2800000, guid: 88eb97e78f86c604bb00864c0dbeffc1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LineGlitch:
+        m_Texture: {fileID: 2800000, guid: 88eb97e78f86c604bb00864c0dbeffc1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Alpha: 1
+    - _AlphaMaskAffect: 0.5
+    - _AlphaMaskFeature: 0
+    - _BumpScale: 1
+    - _ColorGlitchAffect: 0.209
+    - _ColorGlitchFeature: 1
+    - _CullMode: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DisplacementAmount: 0
+    - _DisplacementFeature: 0
+    - _DissolveFeature: 1
+    - _DissolveHide: -1
+    - _DstBlend: 0
+    - _FresnelAlphaPower: 2
+    - _FresnelAlphaScale: 1
+    - _FresnelFeature: 1
+    - _FresnelPower: 2
+    - _FresnelScale: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GrainAffect: 1
+    - _GrainFeature: 1
+    - _Line1Alpha: 0.15
+    - _Line1Feature: 0
+    - _Line1Frequency: 100
+    - _Line1Hardness: 1.45
+    - _Line1InvertedThickness: 0
+    - _Line1Speed: -3.57
+    - _Line2Alpha: 0.1
+    - _Line2Feature: 0
+    - _Line2Frequency: 1
+    - _Line2Hardness: 2
+    - _Line2InvertedThickness: 0.255
+    - _Line2Speed: -1
+    - _LineBothFeature: 0
+    - _LineGlitchFeature: 0
+    - _LineGlitchFrequency: 0.2
+    - _LineGlitchHardness: 5
+    - _LineGlitchInvertedThickness: 0.825
+    - _LineGlitchSpeed: -0.26
+    - _MaskFalloff: 1
+    - _MaskFeature: 1
+    - _MaskInversion: 1
+    - _MaskLocalFeature: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _NormalAffect: 0
+    - _NormalMapFeature: 0
+    - _NormalScale: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _PositionDirection: 1
+    - _PositionFeature: 1
+    - _PositionSpaceFeature: 0
+    - _RandomGlitchAmount: 0.089
+    - _RandomGlitchConstant: 0
+    - _RandomGlitchFeature: 1
+    - _RandomGlitchTiling: 0.82
+    - _RandomOffset: 0
+    - _SmoothnessTextureChannel: 0
+    - _SoftIntersection1Affect: 1
+    - _SoftIntersection1Distance: 0.2
+    - _SoftIntersection1Feature: 0
+    - _SoftIntersection1Intensity: 69.26
+    - _SoftIntersection2Affect: 1
+    - _SoftIntersection2Distance: 0
+    - _SoftIntersection2Feature: 0
+    - _SoftIntersection2Intensity: 1
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _Voxelization: 100
+    - _Voxelization1: 100
+    - _VoxelizationAffect: 1
+    - _VoxelizationAffect1: 1
+    - _VoxelizationFeature: 1
+    - _VoxelizationFeature1: 1
+    - _ZWrite: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveScale: {r: 0.1, g: 1.01, b: 5, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GrainScale: {r: 50, g: 50, b: 50, a: 0}
+    - _GrainValues: {r: 0, g: 1, b: 0, a: 0}
+    - _LineGlitchOffset: {r: 0.03, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 3.9533494, g: 1.0212103, b: 0.6416429, a: 0.05098039}
+    - _MaskCenter: {r: 0, g: 2.6, b: 0, a: 0}
+    - _MaskSize: {r: 3, g: 3, b: 3, a: 0}
+    - _RandomGlitchOffset: {r: -0.3, g: 0, b: 0, a: 0}
