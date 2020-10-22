@@ -10,7 +10,17 @@ public class MyAgent : Agent
     public bool isEndPy = true;
     public bool isImgCheck = false;
 
+    /// <summary>
+    /// modelstartPos : 프린트 시작 위치
+    /// modelEndPos : 프린트 끝나는 위치
+    /// </summary>
+    [SerializeField]
+    private GameObject modelStartPos;
+    [SerializeField]
+    private GameObject modelEndPos;
+
     public List<GameObject> DrawObjects;
+
 
     #region User define function
     public void EndPython()
@@ -51,7 +61,7 @@ public class MyAgent : Agent
             return;
         } else {
             //인식이 되었을때 오브젝트 생성
-            //GameObject obj = Instantiate(DrawObjects[action-1]);
+            GameObject obj = Instantiate(DrawObjects[action-1], modelStartPos.transform);
             isImgCheck = false;
             action = 0;   
         }
