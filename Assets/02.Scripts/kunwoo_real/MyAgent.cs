@@ -40,7 +40,10 @@ public class MyAgent : Agent
 
     int preAction = 0;
 
-    //파이썬의 머신러닝에 대한 액션을 입력받아서 어떻게 행동할지 해서 리워드로 다시 파이썬에 보냄
+
+    /// <summary>
+    /// 파이썬의 머신러닝에 대한 액션을 입력받아서 어떻게 행동할지 해서 리워드로 다시 파이썬에 보냄
+    /// </summary>
     public override void AgentAction(float[] vectorAction, string textAction)
     {
         int action = (int)vectorAction[0];
@@ -52,12 +55,8 @@ public class MyAgent : Agent
             isImgCheck = false;
             action = 0;   
         }
-
-           
-
-
+                   
         //obj를 형이 paint 매니저 (싱글톤 추천) 를 만들어서 넣으면됨 
-     
     }
 
     // 다시 시작
