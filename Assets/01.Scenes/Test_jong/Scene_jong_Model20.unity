@@ -6950,6 +6950,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1210280033}
     m_Modifications:
+    - target: {fileID: 3127828842231103791, guid: f4e364716534ff4478aab7022c418a00,
+        type: 3}
+      propertyPath: m_Name
+      value: Cup
+      objectReference: {fileID: 0}
     - target: {fileID: 3127828842624678340, guid: f4e364716534ff4478aab7022c418a00,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7008,7 +7013,7 @@ PrefabInstance:
     - target: {fileID: 3127828842624678341, guid: f4e364716534ff4478aab7022c418a00,
         type: 3}
       propertyPath: m_Name
-      value: Mug
+      value: Cup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4e364716534ff4478aab7022c418a00, type: 3}
@@ -7146,7 +7151,12 @@ PrefabInstance:
     - target: {fileID: 3690071363570490805, guid: ed99e55b7c48ce045be6a97c0883ae6a,
         type: 3}
       propertyPath: m_Name
-      value: Pidgeon
+      value: Bird
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608499132014560855, guid: ed99e55b7c48ce045be6a97c0883ae6a,
+        type: 3}
+      propertyPath: m_Name
+      value: Bird_UV
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed99e55b7c48ce045be6a97c0883ae6a, type: 3}
