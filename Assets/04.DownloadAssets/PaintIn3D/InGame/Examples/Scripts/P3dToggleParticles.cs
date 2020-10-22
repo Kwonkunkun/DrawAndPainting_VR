@@ -20,12 +20,12 @@ namespace PaintIn3D
 		/// <summary>Should painting triggered from this component be eligible for being undone?</summary>
 		public bool StoreStates { set { storeStates = value; } get { return storeStates; } } [SerializeField] protected bool storeStates = true;
 
-		public bool isCatch = false;
+		public bool isCatch;
 
 		private void Start()
 		{
 			//이걸 true로 바꿔주면되는데 throwable이나 interactive에서 찾아봐야함.
-			isCatch = true;	
+			isCatch = false;	
 		}
 
 		protected virtual void LateUpdate()
@@ -42,7 +42,20 @@ namespace PaintIn3D
 				}
 			}
 		}
-	}
+
+        #region user define method
+        public void OnSpreadSpray()
+		{
+			isCatch = true;
+		}
+
+		public void OffSpereadSpray()
+		{
+			isCatch = false;
+		}
+        #endregion
+
+    }
 }
 
 #if UNITY_EDITOR

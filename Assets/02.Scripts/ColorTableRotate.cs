@@ -17,6 +17,37 @@ public class ColorTableRotate : MonoBehaviour
             RotateX();
     }
 
+    public void UpRotateSpeed()
+    {
+        print("UpRotateSpeed");
+
+        if (rotateSpeed >= 100)
+            return;
+
+        rotateSpeed += 10;
+    }
+
+    public void StopRotate()
+    {
+        print("StopRotate");
+        rotateSpeed = 0;
+    }
+
+    public void DownRotateSpeed()
+    {
+        print("DownRotateSpeed");
+        if (rotateSpeed <= 0)
+            return;
+
+        rotateSpeed -= 10;
+    }
+
+    public void RotateTrigger()
+    {
+        print("RotateTrigger");
+        rotateTrigger ^= true;
+    }
+
     //회전, y축 기준으로
     void RotateY()
     {
