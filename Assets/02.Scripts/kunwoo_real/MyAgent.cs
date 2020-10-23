@@ -33,7 +33,7 @@ public class MyAgent : Agent
     public List<GameObject> DrawObjects;
     public List<GameObject> DrawObjectsShaderApply;
     public GameObject printObject;
-    private GameObject printObjectShaderApply;
+    public GameObject printObjectShaderApply;
 
     public GameObject tabletDontTouch;
     public GameObject printingText;
@@ -70,8 +70,8 @@ public class MyAgent : Agent
     /// <summary>
     /// InitializeAgent()       : 초기화
     /// CollectObservations()   : 파이썬에 보낼 값을 설정(수치 추가)
-    /// AgentAction()   : 파이썬의 머신러닝에 대한 액션을 입력받아서 어떻게 행동할지 해서 리워드로 다시 파이썬에 보냄
-    /// AgentReset()    : 한회전 돌다시 시작
+    /// AgentAction()           : 파이썬의 머신러닝에 대한 액션을 입력받아서 어떻게 행동할지 해서 리워드로 다시 파이썬에 보냄
+    /// AgentReset()            : 한회전 돌다시 시작
     /// </summary>
     public override void AgentAction(float[] vectorAction, string textAction)
     {
@@ -106,10 +106,8 @@ public class MyAgent : Agent
             yield return new WaitForSeconds(0.5f);
             GaugeImage.fillAmount += 0.2f;
         }
-        Destroy(printObjectShaderApply); 
 
         printingText.SetActive(false);
-        printObject.SetActive(true);
         printButton.gameObject.SetActive(true);
     }
     #endregion
