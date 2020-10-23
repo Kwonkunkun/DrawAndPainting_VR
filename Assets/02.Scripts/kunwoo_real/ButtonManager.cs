@@ -39,11 +39,7 @@ public class ButtonManager : MonoBehaviour
     }
 
     public void ClickOutObject() {
-
-
         StartCoroutine(PrintObjectCo());
-
-
     }
 
 
