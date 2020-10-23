@@ -33,7 +33,7 @@ public class HVLPpickUp : MonoBehaviour
     public void putDown()
     {
         isPickUp = false;
-        //curvedCanvas.SetActive(false);
+        curvedCanvas.SetActive(false);
     }
 
     public void ChangeColor(string colorName)
@@ -57,6 +57,26 @@ public class HVLPpickUp : MonoBehaviour
         {
             main.startColor = Color.blue;
             p3DPaintSphere.Color = Color.blue;
+        }
+        else if (colorName == "BLACK")
+        {
+            main.startColor = Color.black;
+            p3DPaintSphere.Color = Color.black;
+        }
+        else if (colorName == "WHITE")
+        {
+            main.startColor = Color.white;
+            p3DPaintSphere.Color = Color.white;
+        }
+        else if (colorName == "CYAN")
+        {
+            main.startColor = Color.cyan;
+            p3DPaintSphere.Color = Color.cyan;
+        }
+        else if (colorName == "GRAY")
+        {
+            main.startColor = Color.gray;
+            p3DPaintSphere.Color = Color.gray;
         }
     }
 }
