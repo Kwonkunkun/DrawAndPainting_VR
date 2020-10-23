@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
     public bool isGameStart;
     public float gameTime;
     public float currentTime;
+    public int maxIdx = 6;
+    public int currentIdx = 0;
+
+    //위치들
+    public Transform[] pos;
 
     #region 싱글톤
 
@@ -66,5 +71,22 @@ public class GameManager : MonoBehaviour
         currentTime = 0;
 
         //추가로 초기화할것 넣기
+    }
+
+    public void OnTable(GameObject obj)
+    {
+        if (obj.transform.childCount == 0)
+            return;
+
+        GameObject gobj = obj.transform.GetChild(0).gameObject;
+        
+        //이미 차있을 경우
+        if (pos[currentIdx].childCount >= 1)
+            Destroy(pos[currentIdx].GetChild(0).gameObject);
+
+        gobj.transform.position = pos[currentIdx].position;
+        gobj.transform.SetParent(pos[currentIdx]);
+        currentIdx++;
+        currentIdx %= 6;
     }
 }
