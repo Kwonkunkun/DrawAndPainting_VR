@@ -5,7 +5,8 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {
 
-    public GameObject canvasClearBtn;
+    public GameObject canvasClear;
+
     [SerializeField]
     MyAgent myAgent;
 
@@ -20,6 +21,11 @@ public class ButtonManager : MonoBehaviour
     [SerializeField]
     private GameObject PrinterparticlePos02;   //파티클 위치
 
+    [SerializeField]
+    private GameObject player;      // 플레이어
+    [SerializeField]
+    private GameObject playerPos;   // 플레이어 게임시작 이동 위치
+
 
     void Start() { }
 
@@ -29,8 +35,8 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("이미지 인식버튼");
         myAgent.isImgCheck = true;
 
-        float[] testVal = { 2.0f};
-        myAgent.AgentAction(testVal,"Test");
+        //float[] testVal = { 2.0f};
+        //myAgent.AgentAction(testVal,"Test");
     }
 
     public void ClickCheckEndButton() {
@@ -44,6 +50,8 @@ public class ButtonManager : MonoBehaviour
 
 
     public void CanvasClear(){
+
+        Debug.Log("캔버스 메소드 호출");
         StartCoroutine(CanvasClearCo());
     }
 
@@ -53,10 +61,11 @@ public class ButtonManager : MonoBehaviour
     /// </summary>
 
     IEnumerator CanvasClearCo(){
-        
-        canvasClearBtn.SetActive(true);
+        Debug.Log("캔버스 호출");
+
+        canvasClear.SetActive(true);
         yield return new WaitForSeconds(0.1f);
-        canvasClearBtn.SetActive(false);
+        canvasClear.SetActive(false);
 
     }
 
@@ -84,5 +93,10 @@ public class ButtonManager : MonoBehaviour
         myAgent.printObject.transform.parent = ColorTable.transform;
         myAgent.printObject.SetActive(true);
 
+    }
+
+    public void SkipButton()
+    {
+        player.transform.position = playerPos.transform.position;
     }
 }

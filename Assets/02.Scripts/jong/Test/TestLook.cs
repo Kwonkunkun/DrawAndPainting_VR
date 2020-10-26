@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class TestLook : MonoBehaviour
 {
+    public GameObject cameraToLookAt;
 
-    //public Transform transform;
-    public GameObject target;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //transform = gameObject.GetComponent<Transform>();
-    }
+    void Start() { }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.rotation = Quaternion.LookRotation(transform.position - target.transform.position);
+    void Update()  {
+
+        Vector3 v = cameraToLookAt.transform.position - transform.position;
+        v.x = v.z = 0;
+        transform.LookAt(cameraToLookAt.transform.position - v );
+
+        transform.Rotate(Vector3.up * 180);
     }
 }
