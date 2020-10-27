@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //게임 시작, 종료, 진행 시간
 public class GameManager : MonoBehaviour
 {
     public int deleteIdx = 0;
-    public GameObject deleteText;
+    public Text deleteText;
 
     public bool isGameStart;
     public float gameTime;
