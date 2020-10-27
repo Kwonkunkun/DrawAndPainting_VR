@@ -5,14 +5,28 @@ using UnityEngine;
 //게임 시작, 종료, 진행 시간
 public class GameManager : MonoBehaviour
 {
+    public int deleteIdx = 0;
+    public GameObject deleteText;
+
     public bool isGameStart;
     public float gameTime;
     public float currentTime;
     public int maxIdx = 6;
     public int currentIdx = 0;
 
+    public Material emptyMaterial;
+    public Material fullMaterial;
+
+    public GameObject errorMessage1;
+    public GameObject successMessage1;
+    public GameObject errorMessage2;
+    public GameObject successMessage2;
+
     //위치들
     public Transform[] pos;
+    //볼들
+    public Transform[] balls;
+
 
     #region 싱글톤
 
@@ -66,11 +80,35 @@ public class GameManager : MonoBehaviour
     public void GameInit()
     {
         //그 파이썬에 보내는 함수도 넣으면 될듯
-
         isGameStart = false;
         currentTime = 0;
-
         //추가로 초기화할것 넣기
+    }
+
+    IEnumerator appearErrorMessage(GameObject obj)
+    {
+        //메세지 띄우고
+        obj.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+
+        //메세지 끄기
+        obj.SetActive(false);
+    }
+
+    int getEmptyPlace()
+    {
+        int ret = -1;
+        for(int i =0; i<6; i++)
+        {
+            //만약에 비어이ㅣㅆ으면
+            if (pos[i].childCount == 0)
+            {
+                ret = i;
+                break;
+            }
+        }
+        return ret;
     }
 
     public void OnTable(GameObject obj)
@@ -79,14 +117,35 @@ public class GameManager : MonoBehaviour
             return;
 
         GameObject gobj = obj.transform.GetChild(0).gameObject;
-        
-        //이미 차있을 경우
-        if (pos[currentIdx].childCount >= 1)
-            Destroy(pos[currentIdx].GetChild(0).gameObject);
 
+        //이미 차있을 경우, 따로 비었는지 찾아본다. 
+        int currentIdx = getEmptyPlace();
+        //꽉차있다고 메세지 호출
+        if(currentIdx == -1)
+        {
+            //메세지 호출 함수 ㄱㄱ
+            StartCoroutine(appearErrorMessage(errorMessage1));
+            return;
+        }
+
+        StartCoroutine(appearErrorMessage(successMessage1));
         gobj.transform.position = pos[currentIdx].position;
         gobj.transform.SetParent(pos[currentIdx]);
-        currentIdx++;
-        currentIdx %= 6;
+        balls[currentIdx].GetComponent<MeshRenderer>().material = fullMaterial;
+    }
+
+    public void DeleteOnTable()
+    {
+        if (pos[deleteIdx].childCount >= 1)
+        {
+            //성공했다고 메세지
+            StartCoroutine(appearErrorMessage(successMessage2));
+            balls[currentIdx].GetComponent<MeshRenderer>().material = emptyMaterial;
+        }
+        else
+        {
+            //비어있다고 메세지 호출
+            StartCoroutine(appearErrorMessage(errorMessage2));
+        }
     }
 }
