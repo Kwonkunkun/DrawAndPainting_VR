@@ -35,8 +35,8 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("이미지 인식버튼");
         myAgent.isImgCheck = true;
 
-        float[] testVal = { 2.0f};
-        myAgent.AgentAction(testVal,"Test");
+        //float[] testVal = { 2.0f};
+        //myAgent.AgentAction(testVal,"Test");
     }
 
     public void ClickCheckEndButton() {

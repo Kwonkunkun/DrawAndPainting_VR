@@ -40,7 +40,6 @@ public class MyAgent : Agent
     public Button printButton;
     public Image GaugeImage;
 
-    
 
     int preAction = 0;
 
@@ -84,7 +83,6 @@ public class MyAgent : Agent
             printObjectShaderApply = Instantiate(DrawObjectsShaderApply[action-1], modelStartPos.transform);
             printObject = Instantiate(DrawObjects[action-1], modelStartPos.transform);
             printObject.SetActive(false);
-
             StartCoroutine(PrintObjectCo());
 
             isImgCheck = false;
@@ -102,10 +100,6 @@ public class MyAgent : Agent
     {
         tabletDontTouch.SetActive(true);
         printingText.SetActive(true);
-
-        // 사운드
-        AudioSource audioSource = GetComponent<AudioSource>();
-        audioSource.Play();
 
         for (int i = 0; i < 5; i++)
         {
