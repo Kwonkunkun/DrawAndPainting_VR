@@ -35,8 +35,8 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("이미지 인식버튼");
         myAgent.isImgCheck = true;
 
-        //float[] testVal = { 2.0f};
-        //myAgent.AgentAction(testVal,"Test");
+        float[] testVal = { 2.0f};
+        myAgent.AgentAction(testVal,"Test");
     }
 
     public void ClickCheckEndButton() {
@@ -44,8 +44,8 @@ public class ButtonManager : MonoBehaviour
         myAgent.isEndPy = false;
     }
 
-    public void ClickOutObject() {
-        StartCoroutine(PrintObjectCo());
+    public void ClickPrintTakeOutButton() {
+        StartCoroutine(PrintTakeOutCo());
     }
 
 
@@ -69,8 +69,7 @@ public class ButtonManager : MonoBehaviour
 
     }
 
-    IEnumerator PrintObjectCo()
-    {
+    IEnumerator PrintTakeOutCo() {
         // 효과 발동
         GameObject printParticle01 = Instantiate(particleEvent, PrinterparticlePos01.transform);
         Destroy(printParticle01, 3);
@@ -88,6 +87,8 @@ public class ButtonManager : MonoBehaviour
         myAgent.printButton.gameObject.SetActive(false);
         myAgent.GaugeImage.fillAmount = 0f;
 
+        CanvasClear();  // 그림판 지우기
+
         /*  출력물을 이제 어디에 위치해야 하는지 지정  */
         myAgent.printObject.transform.position = Temp.transform.position;
         myAgent.printObject.transform.parent = ColorTable.transform;
@@ -95,7 +96,7 @@ public class ButtonManager : MonoBehaviour
 
     }
 
-    public void SkipButton()
+    public void SkipButton() // 시작버튼
     {
         player.transform.position = playerPos.transform.position;
     }
