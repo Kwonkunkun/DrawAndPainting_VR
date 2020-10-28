@@ -98,6 +98,9 @@ public class MyAgent : Agent
     #region 프린터 출력을 위한 코루틴 생성
     IEnumerator PrintObjectCo()
     {
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+
         tabletDontTouch.SetActive(true);
         printingText.SetActive(true);
 
@@ -109,6 +112,8 @@ public class MyAgent : Agent
 
         printingText.SetActive(false);
         printButton.gameObject.SetActive(true);
+
+
     }
     #endregion
 }

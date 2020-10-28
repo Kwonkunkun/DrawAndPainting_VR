@@ -19,7 +19,12 @@ public class HVLPpickUp : MonoBehaviour
     void Update()
     {
         if (isPickUp == true)
+        {
             particleSystem.Play();
+
+
+
+        }
         else
             particleSystem.Pause();
     }
@@ -28,12 +33,18 @@ public class HVLPpickUp : MonoBehaviour
     {
         isPickUp = true;
         curvedCanvas.SetActive(true);
+
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
     }
 
     public void putDown()
     {
         isPickUp = false;
         curvedCanvas.SetActive(false);
+
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.Stop();
     }
 
     public void ChangeColor(string colorName)
