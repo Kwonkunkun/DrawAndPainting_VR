@@ -12,7 +12,7 @@ public class TurnTable : MonoBehaviour
         if (GameManager.instance.deleteIdx < 0)
             GameManager.instance.deleteIdx = 5;
 
-        //GameManager.instance.deleteText.GetComponent<Text>().text = "지워지는 번호 : "+ GameManager.instance.deleteIdx;
+        GameManager.instance.deleteText.GetComponent<Text>().text = "지워지는 번호 : "+ GameManager.instance.deleteIdx;
 
         transform.Rotate(new Vector3(0, 60, 0));
         uiObj.Rotate(new Vector3(0, 60, 0));
@@ -23,7 +23,7 @@ public class TurnTable : MonoBehaviour
         if (GameManager.instance.deleteIdx > 5)
             GameManager.instance.deleteIdx = 0;
 
-        //GameManager.instance.deleteText.GetComponent<Text>().text = "지워지는 번호 : " + GameManager.instance.deleteIdx;
+        GameManager.instance.deleteText.GetComponent<Text>().text = "지워지는 번호 : " + GameManager.instance.deleteIdx;
 
         transform.Rotate(new Vector3(0, -60, 0));
         uiObj.Rotate(new Vector3(0, -60, 0));

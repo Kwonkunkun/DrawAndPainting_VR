@@ -4634,6 +4634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344a1ca101a930b4eb8d0ee943a1e93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiObj: {fileID: 0}
 --- !u!1 &372101721
 GameObject:
   m_ObjectHideFlags: 0
@@ -19957,11 +19958,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f3a2c76f4c36443a2d669ce6206c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deleteIdx: 0
+  deleteText: {fileID: 0}
   isGameStart: 0
   gameTime: 3
   currentTime: 0
   maxIdx: 6
   currentIdx: 0
+  emptyMaterial: {fileID: 0}
+  fullMaterial: {fileID: 0}
+  errorMessage1: {fileID: 0}
+  successMessage1: {fileID: 0}
+  errorMessage2: {fileID: 0}
+  successMessage2: {fileID: 0}
   pos:
   - {fileID: 184212519}
   - {fileID: 1007270695}
@@ -19969,6 +19978,7 @@ MonoBehaviour:
   - {fileID: 1525377927}
   - {fileID: 619106717}
   - {fileID: 360702332}
+  balls: []
 --- !u!4 &1443507349
 Transform:
   m_ObjectHideFlags: 0
@@ -21217,6 +21227,7 @@ MonoBehaviour:
   PrinterparticlePos02: {fileID: 1911242812}
   player: {fileID: 0}
   playerPos: {fileID: 0}
+  playerCam: {fileID: 0}
 --- !u!4 &1548712626
 Transform:
   m_ObjectHideFlags: 0

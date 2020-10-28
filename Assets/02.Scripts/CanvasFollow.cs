@@ -8,7 +8,7 @@ public class CanvasFollow : MonoBehaviour
     
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, targetTransform.position, Time.deltaTime);
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetTransform.rotation, Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, targetTransform.position, Time.deltaTime * 2);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetTransform.rotation, Time.deltaTime * 2);
     }
 }

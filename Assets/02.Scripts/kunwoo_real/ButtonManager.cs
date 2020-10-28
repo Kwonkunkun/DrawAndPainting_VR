@@ -51,6 +51,9 @@ public class ButtonManager : MonoBehaviour
     }
     IEnumerator PrintTakeOutCo()
     {
+        AudioSource printTakeOutSound = GetComponent<AudioSource>();
+        printTakeOutSound.Play();
+
         // 효과 발동
         GameObject printParticle01 = Instantiate(particleEvent, PrinterparticlePos01.transform);
         Destroy(printParticle01, 3);
@@ -74,9 +77,6 @@ public class ButtonManager : MonoBehaviour
         myAgent.printObject.transform.position = Temp.transform.position;
         myAgent.printObject.transform.parent = ColorTable.transform;
         myAgent.printObject.SetActive(true);
-
-
-
     }
 
 
@@ -89,7 +89,6 @@ public class ButtonManager : MonoBehaviour
         canvasClear.SetActive(true);
         yield return new WaitForSeconds(0.1f);
         canvasClear.SetActive(false);
-
     }
     
 
@@ -100,19 +99,22 @@ public class ButtonManager : MonoBehaviour
 
     IEnumerator GameStartCo()
     {
-        GameObject printParticle01 = Instantiate(particleEvent, playerCam.transform);
-        printParticle01.transform.localScale = new Vector3(1f,1f,1f);
-        printParticle01.transform.localPosition = new Vector3(printParticle01.transform.localPosition.x, -0.3f, printParticle01.transform.localPosition.z);
-        Destroy(printParticle01, 3);
+        AudioSource printTakeOutSound = GetComponent<AudioSource>();
+        printTakeOutSound.Play();
 
-        yield return new WaitForSeconds(2f);
+        GameObject printParticle01 = Instantiate(particleEvent, playerCam.transform);
+        printParticle01.transform.localScale = new Vector3(1f, 1f, 1f);
+        printParticle01.transform.localPosition = new Vector3(printParticle01.transform.localPosition.x, -0.3f, printParticle01.transform.localPosition.z);
+        Destroy(printParticle01, 2);
+
+        yield return new WaitForSeconds(1f);
 
         GameObject printParticle02 = Instantiate(particleEvent, playerCam.transform);
-        printParticle02.transform.localScale = new Vector3(1f,1f,1f);
+        printParticle02.transform.localScale = new Vector3(1f, 1f, 1f);
         printParticle02.transform.localPosition = new Vector3(printParticle02.transform.localPosition.x, -0.3f, printParticle02.transform.localPosition.z);
-        Destroy(printParticle02, 4);
+        Destroy(printParticle02, 2);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         player.transform.position = playerPos.transform.position;
 

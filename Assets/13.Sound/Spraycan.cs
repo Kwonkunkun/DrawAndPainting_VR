@@ -37,13 +37,11 @@ public class Spraycan : MonoBehaviour
             {
                 theAudio.Play();
                 isPlay = true;
-                print("치치치치치치치치치치칯");
             }
             else if(!toggleEffect.isCatch && isPlay)
             {
                 theAudio.Stop();
                 isPlay = false;
-                print("끄으으으으으읕");
             }
         }
     }

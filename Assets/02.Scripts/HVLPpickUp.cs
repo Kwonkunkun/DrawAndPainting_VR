@@ -26,7 +26,7 @@ public class HVLPpickUp : MonoBehaviour
 
         }
         else
-            particleSystem.Pause();
+            particleSystem.Stop();
     }
 
     public void pickUp()
