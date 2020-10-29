@@ -9,7 +9,8 @@ public class HandLeftController : MonoBehaviour
 	public SteamVR_Input_Sources leftHand = SteamVR_Input_Sources.LeftHand;
 
 	public SteamVR_Action_Boolean trigger = SteamVR_Actions.default_InteractUI;
-    
+
+
     public GameObject player;
 
     bool touchBtn = false;

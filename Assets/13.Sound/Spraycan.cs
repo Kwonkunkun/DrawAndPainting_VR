@@ -33,12 +33,16 @@ public class Spraycan : MonoBehaviour
         // 만일, 캔을 잡았다면 사운드를 출력한다.
         if (toggleEffect.Target != null)
         {
-            if(toggleEffect.isCatch && !isPlay)
+            if(toggleEffect.isCatch && !isPlay && toggleEffect.isOnClickMenuButton)
             {
                 theAudio.Play();
                 isPlay = true;
             }
-            else if(!toggleEffect.isCatch && isPlay)
+            else if(!toggleEffect.isCatch && isPlay )
+            {
+                theAudio.Stop();
+                isPlay = false;
+            } else if (!toggleEffect.isOnClickMenuButton && isPlay)
             {
                 theAudio.Stop();
                 isPlay = false;

@@ -20,6 +20,7 @@ public class MyAgent : Agent
     /// printObjectShaderApply  : 출력 모델 
     /// 
     /// tabletDontTouch     : 출력중 테블릿 터치방지
+    /// printButtonHold     : 출력버튼 막기
     /// printingText        : 프린터에 출력중 텍스트 표시
     /// printButton         : 프린터 꺼내기 버튼
     /// GaugeImage          : 출력 게이지 이미지
@@ -36,10 +37,10 @@ public class MyAgent : Agent
     public GameObject printObjectShaderApply;
 
     public GameObject tabletDontTouch;
+    public GameObject printButtonHold;
     public GameObject printingText;
     public Button printButton;
     public Image GaugeImage;
-
 
     int preAction = 0;
 
@@ -98,6 +99,7 @@ public class MyAgent : Agent
     #region 프린터 출력을 위한 코루틴 생성
     IEnumerator PrintObjectCo()
     {
+
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.Play();
 
@@ -111,9 +113,8 @@ public class MyAgent : Agent
         }
 
         printingText.SetActive(false);
+        printButtonHold.SetActive(false);
         printButton.gameObject.SetActive(true);
-
-
     }
     #endregion
 }

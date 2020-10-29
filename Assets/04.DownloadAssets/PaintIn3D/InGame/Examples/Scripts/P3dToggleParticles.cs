@@ -20,19 +20,21 @@ namespace PaintIn3D
 		/// <summary>Should painting triggered from this component be eligible for being undone?</summary>
 		public bool StoreStates { set { storeStates = value; } get { return storeStates; } } [SerializeField] protected bool storeStates = true;
 
-		public bool isCatch;
+		public bool isCatch;				// 캔을 잡았을떄
+		public bool isOnClickMenuButton;	// 메뉴버튼을 눌렀을때
 
 		private void Start()
 		{
 			//이걸 true로 바꿔주면되는데 throwable이나 interactive에서 찾아봐야함.
-			isCatch = false;	
+			isCatch = false;
+			isOnClickMenuButton = false;	
 		}
 
 		protected virtual void LateUpdate()
 		{
 			if (target != null)
 			{
-				if (isCatch == true)
+				if (isCatch == true && isOnClickMenuButton == true)
 				{		
 					target.Play();
 				}
@@ -40,7 +42,7 @@ namespace PaintIn3D
 				{
 					target.Stop();
 				}
-			}
+            }
 		}
 
         #region user define method
@@ -52,6 +54,7 @@ namespace PaintIn3D
 		public void OffSpereadSpray()
 		{
 			isCatch = false;
+			isOnClickMenuButton = false;    //타겟을 놓았을때는 메뉴버튼 false
 		}
         #endregion
 

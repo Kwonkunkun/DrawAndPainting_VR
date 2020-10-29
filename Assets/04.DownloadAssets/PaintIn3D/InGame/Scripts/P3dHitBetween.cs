@@ -158,11 +158,7 @@ namespace PaintIn3D
 						case DrawType.PointsIn3D:
 						{
 							SubmitPoint(preview, priority, pressure, finalPosition, finalRotation, this);
-
-								AudioSource audioSource = GetComponent<AudioSource>();
-								audioSource.Play();
-
-							}
+						}
 						break;
 
 						case DrawType.PointsOnUV:

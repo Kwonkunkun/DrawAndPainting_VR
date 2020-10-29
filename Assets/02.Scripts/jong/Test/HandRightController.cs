@@ -9,6 +9,7 @@ public class HandRightController : MonoBehaviour
 
 	public SteamVR_Action_Boolean trigger = SteamVR_Actions.default_InteractUI;
 
+    public SteamVR_Action_Boolean menuAction;
 
     public GameObject player;
 

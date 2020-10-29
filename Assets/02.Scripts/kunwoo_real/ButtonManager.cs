@@ -28,6 +28,7 @@ public class ButtonManager : MonoBehaviour
     [SerializeField]
     private GameObject playerCam;      // 플레이어 카메라
 
+    public bool TEST_MODE = true;
 
     void Start() { }
 
@@ -37,8 +38,10 @@ public class ButtonManager : MonoBehaviour
         //Debug.Log("이미지 인식버튼");
         myAgent.isImgCheck = true;
 
-        float[] testVal = { 2.0f};
-        myAgent.AgentAction(testVal,"Test");
+        if (TEST_MODE) {
+            float[] testVal = { 1.0f };
+            myAgent.AgentAction(testVal, "Test");
+        }
     }
 
     public void ClickCheckEndButton() {
@@ -49,10 +52,14 @@ public class ButtonManager : MonoBehaviour
     public void ClickPrintTakeOutButton() {
         StartCoroutine(PrintTakeOutCo());
     }
-    IEnumerator PrintTakeOutCo()
-    {
+    IEnumerator PrintTakeOutCo() {
+        // 
+        myAgent.printButtonHold.SetActive(true);
+        
+
         AudioSource printTakeOutSound = GetComponent<AudioSource>();
         printTakeOutSound.Play();
+
 
         // 효과 발동
         GameObject printParticle01 = Instantiate(particleEvent, PrinterparticlePos01.transform);
@@ -67,8 +74,8 @@ public class ButtonManager : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        myAgent.tabletDontTouch.SetActive(false);
         myAgent.printButton.gameObject.SetActive(false);
+        myAgent.tabletDontTouch.SetActive(false);
         myAgent.GaugeImage.fillAmount = 0f;
 
         CanvasClear();  // 그림판 지우기
@@ -117,6 +124,8 @@ public class ButtonManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         player.transform.position = playerPos.transform.position;
+        player.transform.rotation = playerPos.transform.rotation;
+
 
     }
 }
