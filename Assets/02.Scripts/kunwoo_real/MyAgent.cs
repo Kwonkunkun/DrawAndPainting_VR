@@ -89,8 +89,7 @@ public class MyAgent : Agent
             isImgCheck = false;
             action = 0;   
         }
-                   
-        //obj를 형이 paint 매니저 (싱글톤 추천) 를 만들어서 넣으면됨 
+
     }
 
     public override void AgentReset() { }

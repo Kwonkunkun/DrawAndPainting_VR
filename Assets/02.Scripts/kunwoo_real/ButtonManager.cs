@@ -27,8 +27,10 @@ public class ButtonManager : MonoBehaviour
     private GameObject playerPos;   // 플레이어 게임시작 이동 위치
     [SerializeField]
     private GameObject playerCam;      // 플레이어 카메라
+    [SerializeField]
+    private GameObject[] video;      // 비디오 버튼
 
-    public bool TEST_MODE = true;
+    public bool TEST_MODE;
 
     void Start() { }
 
@@ -39,7 +41,7 @@ public class ButtonManager : MonoBehaviour
         myAgent.isImgCheck = true;
 
         if (TEST_MODE) {
-            float[] testVal = { 1.0f };
+            float[] testVal = { 14.0f };
             myAgent.AgentAction(testVal, "Test");
         }
     }
@@ -101,6 +103,11 @@ public class ButtonManager : MonoBehaviour
 
     public void ClickGameStartButton() // 시작버튼
     {
+        for (int i = 0; i < video.Length; i++)
+        {
+            video[i].GetComponent<MyVideoPlayer>().VideoStop();
+        }
+
         StartCoroutine(GameStartCo());
     }
 

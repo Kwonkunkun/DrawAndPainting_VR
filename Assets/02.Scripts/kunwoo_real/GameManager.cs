@@ -141,7 +141,8 @@ public class GameManager : MonoBehaviour
         {
             //성공했다고 메세지
             StartCoroutine(appearErrorMessage(successMessage2));
-            balls[currentIdx].GetComponent<MeshRenderer>().material = emptyMaterial;
+            balls[deleteIdx].GetComponent<MeshRenderer>().material = emptyMaterial;
+            //balls[currentIdx].GetComponent<MeshRenderer>().material = emptyMaterial;
             Destroy(pos[deleteIdx].GetChild(0).gameObject);
         }
         else
