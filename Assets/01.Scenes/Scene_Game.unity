@@ -244,7 +244,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -10189,7 +10189,7 @@ Transform:
   m_Children:
   - {fileID: 1846613261}
   m_Father: {fileID: 836387709}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -270, y: -90.00001, z: 90.00001}
 --- !u!23 &528952471
 MeshRenderer:
@@ -18499,8 +18499,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -1.2874755}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 528952470}
   - {fileID: 1009316341}
+  - {fileID: 528952470}
   - {fileID: 501094124}
   m_Father: {fileID: 1126948830}
   m_RootOrder: 2
@@ -19520,7 +19520,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -21310,7 +21310,7 @@ RectTransform:
   m_Children:
   - {fileID: 611791838}
   m_Father: {fileID: 836387709}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33273,7 +33273,7 @@ GameObject:
   - component: {fileID: 1457006165}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36399,11 +36399,11 @@ MonoBehaviour:
     Index: 0
     Texture: {fileID: 0}
     Color: {r: 1, g: 1, b: 1, a: 1}
-    Channels: {x: 3, y: 3, z: 3, w: 3}
+    Channels: {x: 2, y: 2, z: 2, w: 2}
   color: {r: 0, g: 0, b: 0, a: 1}
   opacity: 1
   angle: 0
-  scale: {x: 2, y: 2, z: 2}
+  scale: {x: 1.5, y: 1.5, z: 1.5}
   radius: 0.01
   hardness: 5
   tileTexture: {fileID: 0}
@@ -42042,7 +42042,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -43440,7 +43440,7 @@ GameObject:
   - component: {fileID: 1883661002}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

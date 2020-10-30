@@ -20,8 +20,12 @@ public class MyVideoPlayer : MonoBehaviour
     {
         myVideo.Play();
     }
-    public void VideoStop()
+    public void VideoPause()
     {
         myVideo.Pause();
+    }
+    public void VideoStop()
+    {
+        myVideo.Stop();
     }
 }

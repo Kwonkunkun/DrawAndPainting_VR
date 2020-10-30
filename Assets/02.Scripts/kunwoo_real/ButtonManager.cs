@@ -103,11 +103,6 @@ public class ButtonManager : MonoBehaviour
 
     public void ClickGameStartButton() // 시작버튼
     {
-        for (int i = 0; i < video.Length; i++)
-        {
-            video[i].GetComponent<MyVideoPlayer>().VideoStop();
-        }
-
         StartCoroutine(GameStartCo());
     }
 
@@ -133,6 +128,11 @@ public class ButtonManager : MonoBehaviour
         player.transform.position = playerPos.transform.position;
         player.transform.rotation = playerPos.transform.rotation;
 
+        for (int i = 0; i < video.Length; i++)
+        {
+            video[i].GetComponent<MyVideoPlayer>().VideoPause();
+            video[i].GetComponent<MyVideoPlayer>().VideoStop();
+        }
 
     }
 }
