@@ -23,6 +23,7 @@
 ### 딥러닝 (데이터셋, 모델 선언, 훈련)
 
 [구글 Quick Draw Dataset](https://github.com/googlecreativelab/quickdraw-dataset)
+[모델](https://github.com/Kwonkunkun/DrawAndPainting_Pytorch)
 
 <img width="693" alt="image" src="https://user-images.githubusercontent.com/59603575/102004731-1d70f580-3cc8-11eb-806e-d42a565506ba.png">
 
